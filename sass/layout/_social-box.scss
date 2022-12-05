@@ -1,0 +1,19 @@
+/* Social  */
+
+.social-box {
+  margin-left: 70px;
+}
+
+.social-box__title {
+  @extend %titleStyle;
+  margin-bottom: 20px;
+  color: $primary-white-color;
+}
+
+.social-box__icon {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+

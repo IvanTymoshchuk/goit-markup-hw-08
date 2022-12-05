@@ -1,9 +1,16 @@
 /* footer підпишись */
 
 .form-footer {
-  width: 570px;
-  height: 86px;
-  margin-left: 93px;
+  @media screen and( max-width: $mobile) {
+    display: block;
+    text-align: center;
+  }
+
+  @media screen and( min-width: $desctop) {
+    width: 570px;
+    height: 86px;
+    margin-left: 93px;
+  }
 }
 
 .form-footer_title {
@@ -14,6 +21,11 @@
 
 .form-footer__label {
   display: flex;
+
+     @media screen and( max-width: $mobile) {
+    display: block;
+    text-align: -webkit-center;
+  }
 }
 
 .form-footer__label input {
@@ -27,6 +39,13 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+
+
+    @media screen and( max-width: $mobile) {
+     width: 100%;
+    margin-bottom: 20px;
+  }
+     
 }
 
 .form-footer__label input::placeholder {
@@ -65,4 +84,6 @@
   display: flex;
   align-items: center;
   padding-left: 28px;
+
+
 }

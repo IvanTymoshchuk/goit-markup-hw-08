@@ -11,6 +11,12 @@
 
 .logo {
   color: $primary-white-color;
+
+
+    @media screen and( max-width: $mobile) {
+    display: block;
+    text-align: center;
+  } 
 }
 
 .logo-header {

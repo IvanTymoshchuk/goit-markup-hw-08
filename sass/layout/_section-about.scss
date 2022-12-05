@@ -7,15 +7,19 @@
 .section-about__items {
   list-style: none;
   display: flex;
-}
 
-.section-about__items:last-child {
-  margin-right: 0;
+  @media screen and( max-width: $mobile) {
+    display: block;
+}
 }
 
 .section-about__list {
   margin-right: 30px;
   width: 270px;
+
+  &:last-child {
+  margin-right: 0;
+}
 }
 
 .section-about__bg {
@@ -43,4 +47,9 @@
   color: $title-text-color;
   font-size: 14px;
   line-height: 1.72;
+
+    @media screen and( max-width: 1199px) {
+    margin-bottom: 30px;
+
+}
 }

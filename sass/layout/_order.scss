@@ -7,6 +7,10 @@
 
 .order-box {
   display: flex;
+
+   @media screen and( max-width: $mobile) {
+    display: block;
+  }
 }
 
 .order-width {
@@ -21,6 +25,10 @@
   display: flex;
   flex-direction: column;
   gap: 9px;
+
+      @media screen and( max-width: $mobile) {
+    text-align: center;
+  } 
 }
 
 .info,
@@ -44,5 +52,12 @@
 &:focus {
   color: $actent-color;
 }
+}
+
+.info-mobile{
+ @media screen and( max-width: $mobile) {
+      display: block;
+   margin-bottom: 60px;
+  } 
 }
 

@@ -9,15 +9,33 @@ body {
 .section {
   padding-bottom: 94px;
   padding-top: 94px;
+
+  @media screen and( max-width: 767px) {
+    width: 767px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
 }
+
 .header {
-  border: 1px solid #ECECEC;
+  border: 1px solid #ececec;
 }
 
 .container {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  @media screen and( min-width: $mobile) {
+    width: 480px;
+  }
+
+  @media screen and( min-width: $tablets) {
+    width: 768px;
+  }
+
+  @media screen and( min-width: $desctop) {
+    width: 1200px;
+  }
 }

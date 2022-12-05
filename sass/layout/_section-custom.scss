@@ -2,16 +2,29 @@
 
 .section-custom {
   display: flex;
-  justify-content: center;
+  
+
+   @media screen and( max-width: $mobile) {
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+   @media screen and( min-width:481px ){
+    justify-content: center;
+  }
 }
 
 .section-custom__compagny {
   width: 170px;
   height: 92px;
+
+  &:not(:last-child) {
+  margin-right: 30px;
 }
 
-.section-custom__compagny:not(:last-child) {
-  margin-right: 30px;
+ @media screen and( max-width: $mobile) {
+    margin-bottom: 30px;
+  }
 }
 
 .section-custom__link {

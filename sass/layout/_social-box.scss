@@ -2,18 +2,28 @@
 
 .social-box {
   margin-left: 70px;
+
+    @media screen and( max-width: $mobile) {
+      display: block;
+     text-align: center;
+   margin: 0;
+    }
 }
 
 .social-box__title {
   @extend %titleStyle;
   margin-bottom: 20px;
   color: $primary-white-color;
+
 }
 
 .social-box__icon {
   display: flex;
   justify-content: center;
   gap: 10px;
-}
 
+  @media screen and( max-width: $mobile) {
+      margin-bottom: 60px;
+}
+}
 

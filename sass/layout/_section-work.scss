@@ -1,5 +1,11 @@
 /* Section what we do - Чим займаємось */
 
+.section-reviers{
+   @media screen and( max-width: 767px) {
+   display: none;
+  }
+}
+
 .section-title {
   font-size: 36px;
   line-height: 1.17;

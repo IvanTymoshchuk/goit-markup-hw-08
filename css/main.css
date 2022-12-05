@@ -317,17 +317,38 @@ body {
   padding-bottom: 94px;
   padding-top: 94px;
 }
+@media screen and (max-width: 767px) {
+  .section {
+    width: 767px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
 
 .header {
-  border: 1px solid #ECECEC;
+  border: 1px solid #ececec;
 }
 
 .container {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 /* Logo */
@@ -342,6 +363,12 @@ body {
 
 .logo {
   color: #f5f5f5;
+}
+@media screen and (max-width: 480px) {
+  .logo {
+    display: block;
+    text-align: center;
+  }
 }
 
 .logo-header {
@@ -419,10 +446,18 @@ body {
 }
 
 /* footer підпишись */
-.form-footer {
-  width: 570px;
-  height: 86px;
-  margin-left: 93px;
+@media screen and (max-width: 480px) {
+  .form-footer {
+    display: block;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-footer {
+    width: 570px;
+    height: 86px;
+    margin-left: 93px;
+  }
 }
 
 .form-footer_title {
@@ -434,6 +469,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 480px) {
+  .form-footer__label {
+    display: block;
+    text-align: -webkit-center;
+  }
 }
 
 .form-footer__label input {
@@ -448,6 +489,12 @@ body {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+@media screen and (max-width: 480px) {
+  .form-footer__label input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .form-footer__label input::-webkit-input-placeholder {
@@ -713,8 +760,8 @@ body {
   background-size: cover;
   text-align: center;
   background-color: #757575;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/img/br-studio.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img/br-studio.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-bg/br-studio.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg/br-studio.jpg");
 }
 
 .hero-title {
@@ -903,14 +950,18 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
-
-.section-about__items:last-child {
-  margin-right: 0;
+@media screen and (max-width: 480px) {
+  .section-about__items {
+    display: block;
+  }
 }
 
 .section-about__list {
   margin-right: 30px;
   width: 270px;
+}
+.section-about__list:last-child {
+  margin-right: 0;
 }
 
 .section-about__bg {
@@ -945,8 +996,19 @@ body {
   font-size: 14px;
   line-height: 1.72;
 }
+@media screen and (max-width: 1199px) {
+  .section-about__text {
+    margin-bottom: 30px;
+  }
+}
 
 /* Section what we do - Чим займаємось */
+@media screen and (max-width: 767px) {
+  .section-reviers {
+    display: none;
+  }
+}
+
 .section-title {
   font-size: 36px;
   line-height: 1.17;
@@ -995,6 +1057,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 480px) {
+  .section-team__list {
+    display: block;
+  }
+}
 
 .section-team {
   width: 270px;
@@ -1003,9 +1070,15 @@ body {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
-.section-team:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 480px) {
+  .section-team {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .section-team:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .section-team__box {
@@ -1034,18 +1107,33 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+@media screen and (max-width: 480px) {
+  .section-custom {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 481px) {
+  .section-custom {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .section-custom__compagny {
   width: 170px;
   height: 92px;
 }
-
 .section-custom__compagny:not(:last-child) {
   margin-right: 30px;
+}
+@media screen and (max-width: 480px) {
+  .section-custom__compagny {
+    margin-bottom: 30px;
+  }
 }
 
 .section-custom__link {
@@ -1088,6 +1176,11 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 480px) {
+  .order-box {
+    display: block;
+  }
+}
 
 .order-width {
   min-width: 231px;
@@ -1106,6 +1199,11 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 9px;
+}
+@media screen and (max-width: 480px) {
+  .order-information {
+    text-align: center;
+  }
 }
 
 .info,
@@ -1129,9 +1227,23 @@ body {
   color: #2196f3;
 }
 
+@media screen and (max-width: 480px) {
+  .info-mobile {
+    display: block;
+    margin-bottom: 60px;
+  }
+}
+
 /* Social  */
 .social-box {
   margin-left: 70px;
+}
+@media screen and (max-width: 480px) {
+  .social-box {
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
 }
 
 .social-box__title {
@@ -1147,6 +1259,11 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
+}
+@media screen and (max-width: 480px) {
+  .social-box__icon {
+    margin-bottom: 60px;
+  }
 }
 
 /* icon team  іконки команди */

@@ -1,5 +1,5 @@
 .header-container {
-  @media screen and( min-width: 768px){
+  @media screen and( min-width: 768px) {
     display: flex;
     align-items: center;
     margin-right: auto;
@@ -63,13 +63,15 @@
   display: flex;
   margin-left: 93px;
 
-  @media screen and( max-width:480px) {
+  @media screen and( max-width:$mobile) {
     display: none;
   }
 }
 
 .header-nav__item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and( min-width:$mobile) {
+    margin-right: 50px;
+  }
 }
 
 .header-contact {
@@ -87,6 +89,19 @@
   color: $title-text-color;
   align-items: center;
   display: flex;
+
+  @media screen and( max-width:480px) {
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 32px;
+  }
+  &.header-contact__link--tel{
+    font-size: 34px;
+    
+  }
+&.header-contact__link--tel{
+font-size: 24px;
+}
 }
 
 .header-contact__icon {
@@ -126,11 +141,18 @@
   width: 100%;
   top: 100%;
   left: 0;
-  background-color: chocolate;
   font-size: 15px;
   text-align: center;
 
   &.is-open {
     display: block;
+    padding: 40px;
+    min-height: 796px;
+    background-color: $bg-color-body;
   }
+}
+
+.mobile-link {
+  display: inline-flex;
+  gap: 20px;
 }

@@ -18,7 +18,7 @@
 }
 
 .link-icon {
- @include centerFlex();
+  @include centerFlex();
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -32,8 +32,15 @@
     color: $primary-white-color;
     background-color: $actent-color;
   }
+
+  @media screen and( max-width:$mobile) {
+    color: $actent-color;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+  }
 }
-.social-icon__list{
+.social-icon__list {
   width: 44px;
   height: 44px;
 }

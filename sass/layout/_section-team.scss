@@ -8,8 +8,9 @@
   display: flex;
   align-items: center;
 
-  @media screen and( max-width: $mobile) {
-    display: block;
+ @media screen and( max-width: $mobile) {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 

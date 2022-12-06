@@ -18,6 +18,16 @@
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/hero-bg/br-studio.jpg");
+
+    @media screen and(max-width:$tablets) {
+      background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg-header-mob/header-mobile-bg.jpg);
+    }
+    
 }
 
 .hero-title {
@@ -31,6 +41,18 @@
   line-height: 1.37;
   text-align: center;
   text-transform: uppercase;
+
+  @media screen and(max-width:$tablets) {
+    width: 360px;
+font-weight: 900;
+margin: 0 auto;
+margin-bottom: 30px;
+font-size: 26px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+  }
 }
 
 .hero-button {
@@ -47,4 +69,8 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+
+  @media screen and(max-width:$tablets) {
+    padding: 10px 24px;
+  }
 }

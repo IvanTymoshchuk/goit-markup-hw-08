@@ -664,6 +664,18 @@ body {
           transform: translateY(0);
 }
 
+@media screen and (min-width: 768px) {
+  .header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: auto;
+  }
+}
+
 .header-main__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -824,6 +836,12 @@ body {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-bg/br-studio.jpg");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg/br-studio.jpg");
 }
+@media screen and (max-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bg-header-mob/header-mobile-bg.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-header-mob/header-mobile-bg.jpg);
+  }
+}
 
 .hero-title {
   width: 696px;
@@ -835,6 +853,19 @@ body {
   line-height: 1.37;
   text-align: center;
   text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .hero-title {
+    width: 360px;
+    font-weight: 900;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
 }
 
 .hero-button {
@@ -848,6 +879,11 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+}
+@media screen and (max-width: 768px) {
+  .hero-button {
+    padding: 10px 24px;
+  }
 }
 
 /* Вікно Замовити послугу */
@@ -1017,9 +1053,11 @@ body {
   }
 }
 
-.section-about__list {
-  margin-right: 30px;
-  width: 270px;
+@media screen and (min-width: 481px) {
+  .section-about__list {
+    margin-right: 30px;
+    width: 270px;
+  }
 }
 .section-about__list:last-child {
   margin-right: 0;
@@ -1041,9 +1079,19 @@ body {
   border-radius: 4px;
   background-color: #f5f5f5;
 }
+@media screen and (max-width: 480px) {
+  .section-about__bg {
+    width: 450px;
+  }
+}
 
 .section-about__detals {
   margin-bottom: 10px;
+}
+@media screen and (max-width: 480px) {
+  .section-about__detals {
+    text-align: center;
+  }
 }
 
 .section-about__title {

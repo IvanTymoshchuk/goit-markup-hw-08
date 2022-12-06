@@ -43,7 +43,7 @@
     <!-- Шапка -->
 
     <header class="header">
-      <div class="container header-main__nav">
+      <div class="container header-container">
         <nav class="header-main__nav">
           <a id="logo" href="./index.html" class="logo-header"
             ><span class="logo-header__color">Web</span>Studio</a
@@ -83,11 +83,7 @@
             </svg>
           </button>
 
-        <div class="menu-mobile" id="menu-mobile"
-        data-menu>
-          контент
-        </div>
-
+          <div class="menu-mobile" id="menu-mobile" data-menu>контент</div>
         </nav>
 
         <!--Контакти-->
@@ -304,6 +300,10 @@
           <ul class="section-team__list">
             <li class="section-team">
               <img
+                srcset="
+                  ./images/mob-team/mobil-team-one.jpg   1x,
+                  ./images/mob-team/mobil-team-one2x.jpg 2x
+                "
                 src="./images/team/image-3.jpg"
                 alt="Дизайнер продукту"
                 width="270"

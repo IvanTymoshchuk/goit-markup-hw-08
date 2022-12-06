@@ -1,3 +1,11 @@
+.header-container {
+  @media screen and( min-width: 768px){
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+}
+
 .header-main__nav {
   display: flex;
   align-items: center;
@@ -9,7 +17,7 @@
   }
 }
 
-.header{
+.header {
   @media screen and( max-width:480px) {
     position: relative;
   }
@@ -89,7 +97,6 @@
 // Меню на мобільну версію
 
 .button-mobile {
-
   @media screen and( min-width:481px) {
     display: none;
   }
@@ -113,7 +120,7 @@
   }
 }
 
-.menu-mobile{
+.menu-mobile {
   display: none;
   position: absolute;
   width: 100%;
@@ -123,7 +130,7 @@
   font-size: 15px;
   text-align: center;
 
-  &.is-open{
+  &.is-open {
     display: block;
   }
 }

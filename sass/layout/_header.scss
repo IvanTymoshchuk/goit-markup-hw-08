@@ -2,6 +2,17 @@
   display: flex;
   align-items: center;
   margin-right: auto;
+
+  @media screen and( max-width:480px) {
+    min-height: 60px;
+    justify-content: space-between;
+  }
+}
+
+.header{
+  @media screen and( max-width:480px) {
+    position: relative;
+  }
 }
 
 .header-nav__link {
@@ -43,6 +54,10 @@
 .header-nav {
   display: flex;
   margin-left: 93px;
+
+  @media screen and( max-width:480px) {
+    display: none;
+  }
 }
 
 .header-nav__item:not(:last-child) {
@@ -54,6 +69,10 @@
   gap: 50px;
   list-style: none;
   align-items: center;
+
+  @media screen and( max-width:480px) {
+    display: none;
+  }
 }
 
 .header-contact__link {
@@ -65,4 +84,46 @@
 .header-contact__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+// Меню на мобільну версію
+
+.button-mobile {
+
+  @media screen and( min-width:481px) {
+    display: none;
+  }
+
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  .icon-close_mobile {
+    display: none;
+  }
+
+  &.is-open .icon-close_mobile {
+    display: block;
+  }
+
+  &.is-open .icon-menu_mobile {
+    display: none;
+  }
+}
+
+.menu-mobile{
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  background-color: chocolate;
+  font-size: 15px;
+  text-align: center;
+
+  &.is-open{
+    display: block;
+  }
 }

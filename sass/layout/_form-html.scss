@@ -46,8 +46,8 @@
   }
 }
 
-.form-label__icon {
-  .form-input:focus & {
+.form-input {
+  &:focus + .form-label__icon {
     fill: $bg-svg-icon;
   }
 }
@@ -89,8 +89,8 @@
   appearance: none;
 }
 
-.form-label__icon--rules {
-  .form-label__checkbox:checked & {
+.form-label__checkbox:checked {
+  + .form-label__icon--rules {
     border: 2px solid transparent;
     fill: $primary-white-color;
     background-color: $actent-color;

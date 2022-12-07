@@ -912,6 +912,7 @@ body {
 }
 @media screen and (max-width: 767px) {
   .hero {
+    max-width: 767px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bg-header-mob/header-mobile-bg.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-header-mob/header-mobile-bg.jpg);
   }
@@ -1117,6 +1118,7 @@ body {
 }
 @media screen and (max-width: 480px) {
   .form-label__comment {
+    font-size: 12px;
     line-height: 1.2;
   }
 }
@@ -1277,7 +1279,7 @@ body {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
   .section-team:not(:last-child) {
     margin-right: 30px;
   }
@@ -1524,6 +1526,7 @@ body {
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
+    text-decoration: none;
   }
 }
 

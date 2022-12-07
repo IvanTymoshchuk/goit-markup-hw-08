@@ -124,6 +124,7 @@
   color: $title-text-color;
 
    @media screen and( max-width:$mobile) {
+    font-size: 12px;
     line-height: 1.2;
   }
 }

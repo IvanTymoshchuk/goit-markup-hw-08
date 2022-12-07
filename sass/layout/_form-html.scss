@@ -4,6 +4,10 @@
   width: 448px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and( max-width:$mobile) {
+    width: 370px;
+  }
 }
 
 .form-title {
@@ -12,6 +16,10 @@
   line-height: 1.15;
   margin-bottom: 12px;
   color: $primary-text-color;
+
+   @media screen and( max-width:$mobile) {
+    line-height: 1.5;
+  }
 }
 
 .form-label {
@@ -114,6 +122,10 @@
   line-height: 1.71;
   margin-right: 5px;
   color: $title-text-color;
+
+   @media screen and( max-width:$mobile) {
+    line-height: 1.2;
+  }
 }
 
 .form-label__link {

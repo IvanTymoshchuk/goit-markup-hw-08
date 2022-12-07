@@ -42,7 +42,7 @@
     <!-- Шапка -->
 
     <header class="header">
-      <div class="container header-main__nav">
+      <div class="container header-container">
         <nav class="header-main__nav">
           <a id="logo" href="./index.html" class="logo-header"
             ><span class="logo-header__color">Web</span>Studio</a
@@ -61,6 +61,104 @@
               <a href="" class="header-nav__link">Контакти</a>
             </li>
           </ul>
+
+
+           <!-- Кнопка на мобільному пристрої -->
+
+          <button
+            class="button-mobile"
+            data-menu-button
+            aria-expanded="false"
+            aria-controls="menu-mobile"
+          >
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use
+                class="icon-menu_mobile"
+                href="./images/symbol-defs.svg#icon-menu_mobile"
+              ></use>
+              <use
+                class="icon-close_mobile"
+                href="./images/symbol-defs.svg#icon-close_mobile"
+              ></use>
+            </svg>
+          </button>
+
+          <div class="menu-mobile" id="menu-mobile" data-menu>
+            <ul class="header-menu__mobile">
+              <li class="header-nav__item">
+                <a href="./index.html" class="header-nav__link">Студія</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="" class="header-nav__link"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="header-nav__item">
+                <a href="" class="header-nav__link header-nav__link--bottom"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <a
+                  href="tel:+380961111111"
+                  class="header-contact__link header-contact__link--tel"
+                >
+                  +380961111111</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="header-contact__link header-contact__link--mail"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+
+            <ul class="mobile-link list">
+              <li class="mobil-list__link">
+                <a
+                  href="https://www.instagram.com/"
+                  class="link-icon-menu"
+                  target="_blank"
+                  rel="noopener nooreferrer nofollow "
+                  >Instagram
+                </a>
+              </li>
+              <li class="mobil-list__link">
+                <a
+                  href="https://twitter.com/"
+                  class="link-icon-menu"
+                  target="_blank"
+                  rel="noopener nooreferrer nofollow "
+                  >Twitter
+                </a>
+              </li>
+              <li class="mobil-list__link">
+                <a
+                  href="https://www.facebook.com/"
+                  class="link-icon-menu"
+                  target="_blank"
+                  rel="noopener nooreferrer nofollow "
+                  >Facebook
+                </a>
+              </li>
+              <li class="mobil-list__link">
+                <a
+                  href="https://www.linkedin.com/"
+                  class="link-icon-menu"
+                  target="_blank"
+                  rel="noopener nooreferrer nofollow "
+                  >Linkedin</a
+                >
+              </li>
+            </ul>
+          </div>
+
         </nav>
 
         <!--Контакти-->
@@ -125,6 +223,10 @@
               <a class="section-portfolio__link" href="">
                 <div class="section-portfolio__images">
                   <img
+                    srcset="
+                  ./images/mob-portfolio/technokriak.jpg   1x,
+                  ./images/mob-portfolio/technokriak2x.jpg 2x
+                "
                     src="./images/img-portfolio/one.jpg"
                     alt="ноутбук"
                     width="370"
@@ -150,6 +252,10 @@
               <a class="section-portfolio__link" href="">
                 <div class="section-portfolio__images">
                   <img
+                     srcset="
+                  ./images/mob-portfolio/orlean.jpg   1x,
+                  ./images/mob-portfolio/orlean2x.jpg 2x
+                "
                     src="./images/img-portfolio/two.jpg"
                     alt="постер"
                     width="370"
@@ -177,6 +283,10 @@
               <a class="section-portfolio__link" href="">
                 <div class="section-portfolio__images">
                   <img
+                     srcset="
+                  ./images/mob-portfolio/seafood.jpg   1x,
+                  ./images/mob-portfolio/seafood2x.jpg 2x
+                "
                     src="./images/img-portfolio/three.jpg"
                     alt="афіша ресторана"
                     width="370"
@@ -202,6 +312,10 @@
               <a class="section-portfolio__link" href="">
                 <div class="section-portfolio__images">
                   <img
+                     srcset="
+                  ./images/mob-portfolio/prime.jpg   1x,
+                  ./images/mob-portfolio/prime2x.jpg 2x
+                "
                     src="./images/img-portfolio/for.jpg"
                     alt="наушники"
                     width="370"
@@ -227,6 +341,10 @@
               <a class="section-portfolio__link" href="">
                 <div class="section-portfolio__images">
                   <img
+                     srcset="
+                  ./images/mob-portfolio/boxes.jpg   1x,
+                  ./images/mob-portfolio/boxes2x.jpg 2x
+                "
                     src="./images/img-portfolio/five.jpg"
                     alt="коробки"
                     width="370"
@@ -252,6 +370,10 @@
               <a class="section-portfolio__link" href="">
                 <div class="section-portfolio__images">
                   <img
+                     srcset="
+                  ./images/mob-portfolio/inspiration.jpg   1x,
+                  ./images/mob-portfolio/inspiration2x.jpg 2x
+                "
                     src="./images/img-portfolio/six.jpg"
                     alt="комп'ютер"
                     width="370"
@@ -279,6 +401,10 @@
               <a class="section-portfolio__link" href="">
                 <div class="section-portfolio__images">
                   <img
+                     srcset="
+                  ./images/mob-portfolio/limited.jpg   1x,
+                  ./images/mob-portfolio/limited2x.jpg 2x
+                "
                     src="./images/img-portfolio/seven.jpg"
                     alt="книги"
                     width="370"
@@ -306,6 +432,10 @@
               <a class="section-portfolio__link" href="">
                 <div class="section-portfolio__images">
                   <img
+                     srcset="
+                  ./images/mob-portfolio/lab.jpg   1x,
+                  ./images/mob-portfolio/lab2x.jpg 2x
+                "
                     src="./images/img-portfolio/eight.jpg"
                     alt=""
                     width="370"
@@ -331,6 +461,10 @@
               <a class="section-portfolio__link" href="">
                 <div class="section-portfolio__images">
                   <img
+                     srcset="
+                  ./images/mob-portfolio/growing.jpg   1x,
+                  ./images/mob-portfolio/growing2x.jpg 2x
+                "
                     src="./images/img-portfolio/nine.jpg"
                     alt=""
                     width="370"
@@ -464,5 +598,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

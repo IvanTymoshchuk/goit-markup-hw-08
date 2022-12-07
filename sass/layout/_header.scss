@@ -85,6 +85,11 @@
     margin-right: 50px;
   }
 }
+  .header-nav__item:last-child {
+  @media screen and( max-width:$mobile) {
+    margin-bottom: 302px;
+  }
+}
 
 .header-contact {
   display: flex;
@@ -176,3 +181,16 @@
     align-items: flex-start;
   }
 }
+
+// .mobil-list__link:nth-child(n+2)::after{
+//   content: "";
+//   display: block;
+//   position: absolute;
+//   background-color:rgba(33, 33, 33, 0.2);
+//   width: 22px;
+//   height: 1px;
+//   top: 90%;
+//   left:-10%;
+//   transform-origin: bottom left;
+//   transform: rotate(-900deg);
+// }

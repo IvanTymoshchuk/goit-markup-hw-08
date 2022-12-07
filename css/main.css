@@ -767,6 +767,12 @@ body {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .header-nav__item:last-child {
+    margin-bottom: 302px;
+  }
+}
+
 .header-contact {
   display: -webkit-box;
   display: -ms-flexbox;

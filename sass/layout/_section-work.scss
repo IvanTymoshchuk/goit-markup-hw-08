@@ -1,8 +1,8 @@
 /* Section what we do - Чим займаємось */
 
-.section-reviers{
-   @media screen and( max-width: 767px) {
-   display: none;
+.section-reviers {
+  @media screen and( max-width: $desctop) {
+    display: none;
   }
 }
 
@@ -15,7 +15,7 @@
 }
 
 .section-work__list {
-  color:$primary-text-color;
+  color: $primary-text-color;
   list-style: none;
   display: flex;
   align-items: center;
@@ -36,4 +36,3 @@
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
 }
-

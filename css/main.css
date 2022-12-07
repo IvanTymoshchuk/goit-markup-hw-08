@@ -392,7 +392,7 @@ body {
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1200px) {
   .backdrop {
     overflow-y: scroll;
   }
@@ -417,7 +417,7 @@ body {
   border-radius: 4px;
   padding: 40px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1200px) {
   .backdrop-modal {
     min-height: 609px;
   }
@@ -815,13 +815,26 @@ body {
   display: flex;
   gap: 50px;
   list-style: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 @media screen and (max-width: 480px) {
   .header-contact {
     display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header-contact {
+    gap: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-contact {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -834,7 +847,7 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .header-contact__link {
     font-weight: 500;
     line-height: 1.2;
@@ -1167,15 +1180,25 @@ body {
     display: block;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .section-about__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+}
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 1200px) {
   .section-about__list {
     margin-right: 30px;
     width: 270px;
   }
-}
-.section-about__list:last-child {
-  margin-right: 0;
+  .section-about__list:last-child {
+    margin-right: 0;
+  }
 }
 
 .section-about__bg {
@@ -1189,7 +1212,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 30px;
-  width: 270px;
   height: 120px;
   border-radius: 4px;
   background-color: #f5f5f5;
@@ -1197,6 +1219,16 @@ body {
 @media screen and (max-width: 480px) {
   .section-about__bg {
     width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-about__bg {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-about__bg {
+    width: 270px;
   }
 }
 
@@ -1227,7 +1259,7 @@ body {
 }
 
 /* Section what we do - Чим займаємось */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
   .section-reviers {
     display: none;
   }

@@ -95,10 +95,16 @@
   display: flex;
   gap: 50px;
   list-style: none;
-  align-items: center;
 
   @media screen and( max-width:$mobile) {
     display: none;
+  }
+  @media screen and( max-width:$desctop) {
+    gap: 10px;
+    flex-direction: column;
+  }
+  @media screen and( min-width:$desctop) {
+    align-items: center;
   }
 }
 
@@ -107,7 +113,7 @@
   align-items: center;
   display: flex;
 
-  @media screen and( max-width:$tablets) {
+  @media screen and( max-width:$mobile) {
     font-weight: 500;
     line-height: 1.2;
     margin-bottom: 32px;
@@ -183,8 +189,8 @@
 }
 
 .button-mobile__foto {
-  &:hover ,
-  &:focus{
+  &:hover,
+  &:focus {
     fill: $actent-color;
   }
 }

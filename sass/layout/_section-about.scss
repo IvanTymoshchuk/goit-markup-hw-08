@@ -10,33 +10,40 @@
 
   @media screen and( max-width: $mobile) {
     display: block;
-}
+  }
+  @media screen and( min-width: $tablets) and (max-width: $desctop) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
 }
 
 .section-about__list {
-
-  @media screen and( min-width: 481px) {
+  @media screen and( min-width: $desctop) {
     margin-right: 30px;
     width: 270px;
-}
- 
-
-  &:last-child {
-  margin-right: 0;
-}
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .section-about__bg {
   @include centerFlex();
   margin-bottom: 30px;
-  width: 270px;
   height: 120px;
   border-radius: 4px;
   background-color: $primary-white-color;
 
   @media screen and( max-width: $mobile) {
     width: 450px;
-}
+  }
+  @media screen and( min-width: $tablets) {
+    width: 354px;
+  }
+  @media screen and( min-width: $desctop) {
+    width: 270px;
+  }
 }
 
 .section-about__detals {
@@ -45,7 +52,7 @@
 
   @media screen and( max-width: $mobile) {
     text-align: center;
-}
+  }
 }
 
 .section-about__title {
@@ -60,8 +67,7 @@
   font-size: 14px;
   line-height: 1.72;
 
-    @media screen and( max-width: 1199px) {
+  @media screen and( max-width: 1199px) {
     margin-bottom: 30px;
-
-}
+  }
 }

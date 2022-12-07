@@ -9,7 +9,7 @@
   background-color: rgba(47, 48, 58, 0.4);
   transition: opacity 250ms $calc-animation, visibility 250ms $calc-animation;
 
-  @media screen and( max-width:$mobile) {
+  @media screen and( max-width:$desctop) {
     overflow-y: scroll;
   }
 }
@@ -35,7 +35,7 @@
   border-radius: 4px;
   padding: 40px;
 
-  @media screen and( max-width:$mobile) {
+  @media screen and( max-width:$desctop) {
     min-height: 609px;
   }
 }

@@ -32,14 +32,17 @@
     color: $primary-white-color;
     background-color: $actent-color;
   }
+}
 
-  @media screen and( max-width:$mobile) {
+.link-icon-menu{
+ @media screen and( max-width:$mobile) {
     color: $actent-color;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
   }
 }
+
 .social-icon__list {
   width: 44px;
   height: 44px;

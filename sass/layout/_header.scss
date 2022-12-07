@@ -166,12 +166,16 @@
   font-size: 15px;
   text-align: center;
 
+
   &.is-open {
     display: block;
     padding: 40px;
-    width: 480px;
+    width: 100%;
     min-height: 796px;
     background-color: $bg-color-body;
+    z-index: 1;
+
+   
   }
 }
 

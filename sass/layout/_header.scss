@@ -15,6 +15,7 @@
     min-height: 60px;
     justify-content: space-between;
   }
+  
 }
 
 .header {
@@ -85,7 +86,7 @@
     margin-right: 50px;
   }
 }
-  .header-nav__item:last-child {
+.header-nav__item:last-child {
   @media screen and( max-width:$mobile) {
     margin-bottom: 302px;
   }
@@ -137,7 +138,6 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  
 
   .icon-close_mobile {
     display: none;
@@ -145,12 +145,10 @@
 
   &.is-open .icon-close_mobile {
     display: block;
-    
   }
 
   &.is-open .icon-menu_mobile {
     display: none;
-    
   }
 }
 

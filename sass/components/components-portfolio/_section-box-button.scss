@@ -2,8 +2,14 @@
 
 .section-box__button {
   display: flex;
-  justify-content: center;
   gap: 8px;
+
+    @media screen and( max-width:$mobile) {
+    flex-wrap: wrap;
+  }
+    @media screen and( min-width:$tablets) {
+    justify-content: center;
+  }
 }
 
 .section-button__portfolio {

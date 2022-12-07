@@ -8,9 +8,10 @@
   display: flex;
   align-items: center;
 
- @media screen and( max-width: $mobile) {
+ @media screen and( max-width: $desctop) {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 30px;
   }
 }
 
@@ -21,12 +22,8 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  @media screen and( max-width: $mobile) {
-    margin-bottom: 30px;
-  }
-
   &:not(:last-child) {
-    @media screen and( min-width: 481px) {
+    @media screen and( min-width: $desctop) {
       margin-right: 30px;
     }
   }

@@ -19,7 +19,7 @@
 }
 
 .section-about__list {
-  @media screen and( min-width: $desctop) {
+  @media screen and( min-width:$desctop) {
     margin-right: 30px;
     width: 270px;
     &:last-child {

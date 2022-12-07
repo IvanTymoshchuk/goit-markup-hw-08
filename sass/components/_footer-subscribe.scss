@@ -1,7 +1,7 @@
 /* footer підпишись */
 
 .form-footer {
-  @media screen and( max-width: $mobile) {
+  @media screen and( max-width: $desctop) {
     display: block;
     text-align: center;
   }
@@ -22,7 +22,7 @@
 .form-footer__label {
   display: flex;
 
-     @media screen and( max-width: $mobile) {
+     @media screen and( max-width: $desctop) {
     display: block;
     text-align: -webkit-center;
   }
@@ -41,7 +41,7 @@
   border-radius: 4px;
 
 
-    @media screen and( max-width: $mobile) {
+    @media screen and( max-width: $desctop) {
      width: 100%;
     margin-bottom: 20px;
   }

@@ -8,7 +8,7 @@
 .order-box {
   display: flex;
 
-   @media screen and( max-width: $mobile) {
+   @media screen and( max-width: $desctop) {
     display: block;
   }
 }
@@ -26,7 +26,7 @@
   flex-direction: column;
   gap: 9px;
 
-      @media screen and( max-width: $mobile) {
+      @media screen and( max-width: $desctop) {
     text-align: center;
   } 
 }
@@ -55,7 +55,7 @@
 }
 
 .info-mobile{
- @media screen and( max-width: $mobile) {
+ @media screen and( max-width: $desctop) {
       display: block;
    margin-bottom: 60px;
   } 

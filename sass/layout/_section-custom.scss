@@ -2,17 +2,12 @@
 
 .section-custom {
   display: flex;
-  
 
-   @media screen and( max-width: $mobile) {
+  @media screen and( max-width:$desctop) {
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 30px;
-    margin-bottom: 30px;
-  }
-
-   @media screen and( min-width:481px ){
-    justify-content: center;
+    margin-bottom: 60px;
   }
 }
 
@@ -20,15 +15,13 @@
   width: 170px;
   height: 92px;
 
-
-
- @media screen and( min-width: $desctop) {
-      &:not(:last-child) {
-  margin-right: 30px;
-}
+  @media screen and( min-width: $desctop) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 
- @media screen and( max-width: $mobile) {
+  @media screen and( max-width: $mobile) {
     margin-bottom: 30px;
   }
 }

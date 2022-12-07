@@ -834,7 +834,7 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .header-contact__link {
     font-weight: 500;
     line-height: 1.2;
@@ -914,6 +914,10 @@ body {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+}
+
+.button-mobile__foto:hover, .button-mobile__foto:focus {
+  fill: #2196f3;
 }
 
 /* Hero */

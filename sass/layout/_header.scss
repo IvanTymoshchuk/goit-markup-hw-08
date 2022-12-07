@@ -15,7 +15,6 @@
     min-height: 60px;
     justify-content: space-between;
   }
-  
 }
 
 .header {
@@ -98,7 +97,7 @@
   list-style: none;
   align-items: center;
 
-  @media screen and( max-width:480px) {
+  @media screen and( max-width:$mobile) {
     display: none;
   }
 }
@@ -108,7 +107,7 @@
   align-items: center;
   display: flex;
 
-  @media screen and( max-width:480px) {
+  @media screen and( max-width:$tablets) {
     font-weight: 500;
     line-height: 1.2;
     margin-bottom: 32px;
@@ -180,6 +179,13 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+.button-mobile__foto {
+  &:hover ,
+  &:focus{
+    fill: $actent-color;
   }
 }
 

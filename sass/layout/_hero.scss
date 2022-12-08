@@ -20,17 +20,19 @@
     url("../images/hero-bg/br-studio.jpg");
 }
 
-   @media (min-device-pixel-ratio: 2),
-   (-webkit-min-device-pixel-ratio: 2),
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
     @media screen and( max-width:$tablets) {
+      background-size: cover;
       background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),url('../images/bg-header-mob/header-mobile-bg2x.jpg ');
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/bg-header-mob/header-mobile-bg2x.jpg ");
     }
   }
 }
@@ -49,14 +51,14 @@
 
   @media screen and(max-width:$tablets) {
     width: 360px;
-font-weight: 900;
-margin: 0 auto;
-margin-bottom: 30px;
-font-size: 26px;
-line-height: 1.62;
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
+    font-weight: 900;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
   }
 }
 

@@ -21,7 +21,6 @@
 .section-about__list {
   @media screen and( min-width:$desctop) {
     margin-right: 30px;
-    width: 270px;
     &:last-child {
       margin-right: 0;
     }
@@ -67,7 +66,7 @@
   font-size: 14px;
   line-height: 1.72;
 
-  @media screen and( max-width: 1199px) {
+  @media screen and( max-width: $desctop) {
     margin-bottom: 30px;
   }
 }

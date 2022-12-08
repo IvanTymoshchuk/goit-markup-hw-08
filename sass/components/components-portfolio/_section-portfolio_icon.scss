@@ -12,7 +12,6 @@
 }
 
 .section-portfolio__list {
-  
   border: 1px solid #eeeeee;
   transform: box-shadow 250ms $calc-animation;
 
@@ -22,12 +21,15 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 
-  //   @media screen and( min-width:$desctop) {
-  //   width: calc((100% - 30px) / 2);
-  // }
-
-   @media screen and( min-width:$desctop) {
+  @media screen and( min-width:$desctop) {
     width: calc((100% - 60px) / 3);
+  }
+
+  @media screen and( min-width:$tablets) and (max-width: $desctop) {
+    width: 354px;
+    &:not(:last-child) {
+      margin: 0 auto;
+    }
   }
 }
 

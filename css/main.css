@@ -649,6 +649,14 @@ body {
     width: calc((100% - 60px) / 3);
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .section-portfolio__list {
+    width: 354px;
+  }
+  .section-portfolio__list:not(:last-child) {
+    margin: 0 auto;
+  }
+}
 
 .section-portfolio__title {
   color: #212121;
@@ -1199,6 +1207,12 @@ body {
   }
   .section-about__list:last-child {
     margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .section-about__list {
+    width: 354px;
+    margin: 0 auto;
   }
 }
 

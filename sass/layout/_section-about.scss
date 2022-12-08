@@ -25,7 +25,13 @@
       margin-right: 0;
     }
   }
+   @media screen and( min-width:$tablets) and (max-width: $desctop){
+       width: 354px;
+    margin: 0 auto;
 }
+    }
+  
+   
 
 .section-about__bg {
   @include centerFlex();

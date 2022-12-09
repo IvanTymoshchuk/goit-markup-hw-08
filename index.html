@@ -376,15 +376,29 @@
 
           <ul class="section-team__list">
             <li class="section-team">
-              <img
-                srcset="
-                  ./images/mob-team/mobil-team-one.jpg   1x,
-                  ./images/mob-team/mobil-team-one2x.jpg 2x
-                "
-                src="./images/team/image-3.jpg"
-                alt="Дизайнер продукту"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mob-team/mobil-team-one.jpg   1x,
+                    ./images/mob-team/mobil-team-one2x.jpg 2x
+                  "
+                  media="( min-width=480px )"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/tab-team/tab-team-one.jpg   1x,
+                    ./images/tab-team/tab-team-one2x.jpg 2x
+                  "
+                  media="( min-width=768px )"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/team/image-3.jpg"
+                  alt="Дизайнер продукту"
+                  width="270"
+                />
+              </picture>
 
               <div class="section-team__box">
                 <h3 class="section-team__name">Ігор Дем'яненко</h3>

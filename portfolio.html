@@ -62,8 +62,7 @@
             </li>
           </ul>
 
-
-           <!-- Кнопка на мобільному пристрої -->
+          <!-- Кнопка на мобільному пристрої -->
 
           <button
             class="button-mobile"
@@ -89,14 +88,10 @@
                 <a href="./index.html" class="header-nav__link">Студія</a>
               </li>
               <li class="header-nav__item">
-                <a href="" class="header-nav__link"
-                  >Портфоліо</a
-                >
+                <a href="" class="header-nav__link">Портфоліо</a>
               </li>
               <li class="header-nav__item">
-                <a href="" class="header-nav__link"
-                  >Контакти</a
-                >
+                <a href="" class="header-nav__link">Контакти</a>
               </li>
             </ul>
 
@@ -158,7 +153,6 @@
               </li>
             </ul>
           </div>
-
         </nav>
 
         <!--Контакти-->
@@ -222,16 +216,33 @@
             <li class="section-portfolio__list">
               <a class="section-portfolio__link" href="">
                 <div class="section-portfolio__images">
-                  <img
-                    srcset="
-                  ./images/mob-portfolio/technokriak.jpg   1x,
-                  ./images/mob-portfolio/technokriak2x.jpg 2x
-                "
-                    src="./images/img-portfolio/one.jpg"
-                    alt="ноутбук"
-                    
-                  />
-
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mob-portfolio/technokriak.jpg   1x,
+                        ./images/mob-portfolio/technokriak2x.jpg 2x
+                      "
+                      media="( max-width:480px )"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab-portf/technokriakp.jpg   1x,
+                        ./images/tab-portf/technokriakp2x.jpg 2x
+                      "
+                      media="( min-width:768px )"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/desc-portf/technokriakd.jpg   1x,
+                        ./images/desc-portf/technokriakd2x.jpg 2x
+                      "
+                      media="( min-width:1200px )"
+                      type="image/jpg"
+                    />
+                    <img src="./images/img-portfolio/one.jpg" alt="ноутбук" />
+                  </picture>
                   <div class="section-portfolio__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -251,16 +262,35 @@
             <li class="section-portfolio__list">
               <a class="section-portfolio__link" href="">
                 <div class="section-portfolio__images">
-                  <img
-                     srcset="
-                  ./images/mob-portfolio/orlean.jpg   1x,
-                  ./images/mob-portfolio/orlean2x.jpg 2x
-                "
-                    src="./images/img-portfolio/two.jpg"
-                    alt="постер"
-                    
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mob-portfolio/orlean.jpg   1x,
+                        ./images/mob-portfolio/orlean2x.jpg 2x
+                      "
+                      media="( max-width:480px )"
+                      type="image/jpg"
+                    />
 
+                    <source
+                      srcset="
+                        ./images/tab-portf/orleanp.jpg   1x,
+                        ./images/tab-portf/orleanp2x.jpg 2x
+                      "
+                      media="( min-width:768px )"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/desc-portf/orleand.jpg   1x,
+                        ./images/desc-portf/orleand2x.jpg 2x
+                      "
+                      media="( min-width:1200px )"
+                      type="image/jpg"
+                    />
+
+                    <img src="./images/img-portfolio/two.jpg" alt="постер" />
+                  </picture>
                   <div class="section-portfolio__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -282,16 +312,37 @@
             <li class="section-portfolio__list">
               <a class="section-portfolio__link" href="">
                 <div class="section-portfolio__images">
-                  <img
-                     srcset="
-                  ./images/mob-portfolio/seafood.jpg   1x,
-                  ./images/mob-portfolio/seafood2x.jpg 2x
-                "
-                    src="./images/img-portfolio/three.jpg"
-                    alt="афіша ресторана"
-                    
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mob-portfolio/seafood.jpg   1x,
+                        ./images/mob-portfolio/seafood2x.jpg 2x
+                      "
+                      media="( max-width:480px )"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab-portf/seafoodp.jpg   1x,
+                        ./images/tab-portf/seafoodp2x.jpg 2x
+                      "
+                      media="( min-width:768px )"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/desc-portf/seafoodd.jpg   1x,
+                        ./images/desc-portf/seafoodd2x.jpg 2x
+                      "
+                      media="( min-width:1200px )"
+                      type="image/jpg"
+                    />
 
+                    <img
+                      src="./images/img-portfolio/three.jpg"
+                      alt="афіша ресторана"
+                    />
+                  </picture>
                   <div class="section-portfolio__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -311,16 +362,34 @@
             <li class="section-portfolio__list">
               <a class="section-portfolio__link" href="">
                 <div class="section-portfolio__images">
-                  <img
-                     srcset="
-                  ./images/mob-portfolio/prime.jpg   1x,
-                  ./images/mob-portfolio/prime2x.jpg 2x
-                "
-                    src="./images/img-portfolio/for.jpg"
-                    alt="наушники"
-                    
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mob-portfolio/prime.jpg   1x,
+                        ./images/mob-portfolio/prime2x.jpg 2x
+                      "
+                      media="( max-width:480px )"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab-portf/primep.jpg   1x,
+                        ./images/tab-portf/primep2x.jpg 2x
+                      "
+                      media="( min-width:768px )"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/desc-portf/primed.jpg   1x,
+                        ./images/desc-portf/primed2x.jpg 2x
+                      "
+                      media="( min-width:1200px )"
+                      type="image/jpg"
+                    />
 
+                    <img src="./images/img-portfolio/for.jpg" alt="наушники" />
+                  </picture>
                   <div class="section-portfolio__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -340,16 +409,34 @@
             <li class="section-portfolio__list">
               <a class="section-portfolio__link" href="">
                 <div class="section-portfolio__images">
-                  <img
-                     srcset="
-                  ./images/mob-portfolio/boxes.jpg   1x,
-                  ./images/mob-portfolio/boxes2x.jpg 2x
-                "
-                    src="./images/img-portfolio/five.jpg"
-                    alt="коробки"
-                    
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mob-portfolio/boxes.jpg   1x,
+                        ./images/mob-portfolio/boxes2x.jpg 2x
+                      "
+                      media="( max-width:480px )"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab-portf/boxesp.jpg   1x,
+                        ./images/tab-portf/boxesp2x.jpg 2x
+                      "
+                      media="( min-width:768px )"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/desc-portf/boxesd.jpg   1x,
+                        ./images/desc-portf/boxesd2x.jpg 2x
+                      "
+                      media="( min-width:1200px )"
+                      type="image/jpg"
+                    />
 
+                    <img src="./images/img-portfolio/five.jpg" alt="коробки" />
+                  </picture>
                   <div class="section-portfolio__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -369,16 +456,34 @@
             <li class="section-portfolio__list">
               <a class="section-portfolio__link" href="">
                 <div class="section-portfolio__images">
-                  <img
-                     srcset="
-                  ./images/mob-portfolio/inspiration.jpg 1x,
-                  ./images/mob-portfolio/inspiration2x.jpg 2x
-                "
-                    src="./images/img-portfolio/six.jpg"
-                    alt="комп'ютер"
-                    
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mob-portfolio/inspiration.jpg   1x,
+                        ./images/mob-portfolio/inspiration2x.jpg 2x
+                      "
+                      media="( max-width:480px )"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab-portf/inspirationp.jpg   1x,
+                        ./images/tab-portf/inspirationp2x.jpg 2x
+                      "
+                      media="( min-width:768px )"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/desc-portf/inspiration.jpg   1x,
+                        ./images/desc-portf/inspirationd2x.jpg 2x
+                      "
+                      media="( min-width:1200px )"
+                      type="image/jpg"
+                    />
 
+                    <img src="./images/img-portfolio/six.jpg" alt="комп'ютер" />
+                  </picture>
                   <div class="section-portfolio__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -400,16 +505,34 @@
             <li class="section-portfolio__list">
               <a class="section-portfolio__link" href="">
                 <div class="section-portfolio__images">
-                  <img
-                     srcset="
-                  ./images/mob-portfolio/limited.jpg   1x,
-                  ./images/mob-portfolio/limited2x.jpg 2x
-                "
-                    src="./images/img-portfolio/seven.jpg"
-                    alt="книги"
-                    
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/max-portfolio/limited.jpg   1x,
+                        ./images/mob-portfolio/limited2x.jpg 2x
+                      "
+                      media="( min-width:480px )"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab-portf/limitedp.jpg   1x,
+                        ./images/tab-portf/limitedp2x.jpg 2x
+                      "
+                      media="( min-width:768px )"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/desc-portf/limitedd.jpg   1x,
+                        ./images/desc-portf/limitedd2x.jpg 2x
+                      "
+                      media="( min-width:1200px )"
+                      type="image/jpg"
+                    />
 
+                    <img src="./images/img-portfolio/seven.jpg" alt="книги" />
+                  </picture>
                   <div class="section-portfolio__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -431,16 +554,34 @@
             <li class="section-portfolio__list">
               <a class="section-portfolio__link" href="">
                 <div class="section-portfolio__images">
-                  <img
-                     srcset="
-                  ./images/mob-portfolio/lab.jpg   1x,
-                  ./images/mob-portfolio/lab2x.jpg 2x
-                "
-                    src="./images/img-portfolio/eight.jpg"
-                    alt=""
-                   
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mob-portfolio/lab.jpg   1x,
+                        ./images/mob-portfolio/lab2x.jpg 2x
+                      "
+                      media="( max-width:480px )"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab-portf/labp.jpg   1x,
+                        ./images/tab-portf/labp2x.jpg 2x
+                      "
+                      media="( min-width:768px )"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/desc-portf/labd.jpg   1x,
+                        ./images/desc-portf/labd2x.jpg 2x
+                      "
+                      media="( min-width:1200px )"
+                      type="image/jpg"
+                    />
 
+                    <img src="./images/img-portfolio/eight.jpg" alt="" />
+                  </picture>
                   <div class="section-portfolio__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -460,16 +601,34 @@
             <li class="section-portfolio__list">
               <a class="section-portfolio__link" href="">
                 <div class="section-portfolio__images">
-                  <img
-                     srcset="
-                  ./images/mob-portfolio/growing.jpg   1x,
-                  ./images/mob-portfolio/growing2x.jpg 2x
-                "
-                    src="./images/img-portfolio/nine.jpg"
-                    alt=""
-                    
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mob-portfolio/growing.jpg   1x,
+                        ./images/mob-portfolio/growing2x.jpg 2x
+                      "
+                      media="( max-width:480px )"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab-portf/growingp.jpg   1x,
+                        ./images/tab-portf/growing2x.jpg 2x
+                      "
+                      media="( min-width:768px )"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/desc-portf/growingd.jpg   1x,
+                        ./images/desc-portf/growingd2x.jpg 2x
+                      "
+                      media="( min-width:1200px )"
+                      type="image/jpg"
+                    />
 
+                    <img src="./images/img-portfolio/nine.jpg" alt="" />
+                  </picture>
                   <div class="section-portfolio__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем

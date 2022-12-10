@@ -25,11 +25,14 @@
     width: calc((100% - 60px) / 3);
   }
 
-  @media screen and( min-width:$tablets) and (max-width: $desctop) {
+  @media screen and( min-width:$tablets) and (max-width: 1199px) {
     width: 354px;
     &:not(:last-child) {
       margin: 0 auto;
     }
+  }
+   @media screen and( max-width: $mobile) {
+    width: 450px;
   }
 }
 
@@ -57,15 +60,15 @@
   position: relative;
   overflow: hidden;
 
-  @media screen and( max-width: $mobile) {
-    width: 450px;
-  }
-  @media screen and( min-width: $tablets) {
-    width: 354px;
-  }
-  @media screen and( min-width: $desctop) {
-    width: 370px;
-  }
+  // @media screen and( max-width: $mobile) {
+  //   width: 450px;
+  // }
+  // @media screen and( max-width: $tablets) {
+  //   width: 354px;
+  // }
+  // @media screen and( min-width: $desctop) {
+  //   width: 370px;
+  // }
 }
 
 .section-portfolio__overlay {
@@ -78,6 +81,10 @@
   padding: 63px 24px;
   transform: translateY(100%);
   transition: transform 250ms $calc-animation;
+
+  @media screen and(max-width:$mobile) {
+    padding: 63px 54px;
+  }
 }
 
 .section-portfolio__link {

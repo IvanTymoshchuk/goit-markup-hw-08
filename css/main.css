@@ -952,6 +952,13 @@ body {
   fill: #2196f3;
 }
 
+.mobile-separator {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-left: 15px;
+}
+
 /* Hero */
 .hero {
   max-width: 1600px;

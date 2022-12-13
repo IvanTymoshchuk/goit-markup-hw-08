@@ -649,14 +649,6 @@ body {
     width: calc((100% - 60px) / 3);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .section-portfolio__list {
-    width: 354px;
-  }
-  .section-portfolio__list:not(:last-child) {
-    margin: 0 auto;
-  }
-}
 @media screen and (max-width: 480px) {
   .section-portfolio__list {
     width: 450px;

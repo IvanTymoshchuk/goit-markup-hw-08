@@ -3,27 +3,27 @@
 .social-box {
   margin-left: 70px;
 
-    @media screen and( max-width: $desctop) {
-      display: block;
-     text-align: center;
-   margin: 0;
-    }
+  @media screen and( max-width: $desctop) {
+    display: flex;
+    text-align: center;
+    gap: 20px;
+    margin: 0;
+    margin-bottom: 60px;
+    flex-direction: column;
+  }
 }
 
 .social-box__title {
   @extend %titleStyle;
-  margin-bottom: 20px;
-  color: $primary-white-color;
 
+  color: $primary-white-color;
+  @media screen and( min-width: $desctop) {
+    margin-bottom: 20px;
+  }
 }
 
 .social-box__icon {
   display: flex;
   justify-content: center;
   gap: 10px;
-
-  @media screen and( max-width: $desctop) {
-      margin-bottom: 60px;
 }
-}
-

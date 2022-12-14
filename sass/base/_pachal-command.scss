@@ -10,7 +10,7 @@ body {
   padding-bottom: 94px;
   padding-top: 94px;
 
-  @media screen and( max-width: 767px) {
+  @media screen and( max-width: $desctop) {
     padding-bottom: 60px;
     padding-top: 60px;
   }

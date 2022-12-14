@@ -11,8 +11,15 @@
 }
 
 .section-custom__compagny {
-  width: 170px;
   height: 92px;
+
+  @media screen and( max-width: $mobile) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and( min-width: $tablets) {
+    width: calc((100% - 60px) / 3);
+  }
 
   @media screen and( min-width: $desctop) {
     &:not(:last-child) {

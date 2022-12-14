@@ -18,6 +18,10 @@
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/hero-bg/br-studio.jpg");
+
+  @media screen and( min-width:$tablets)and( max-width:1199px) {
+    padding: 118px 0;
+  }
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -25,31 +29,31 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
-    @media screen and( max-width:$mobile) {
+    @media screen and( min-width:$desctop) {
       background-size: cover;
       background-image: linear-gradient(
           to right,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../images/bg-header-mob/header-mob-bg2x.jpg");
+        url("../images/hero-bg/bg-hero-desc2x.jpg");
     }
   }
-
 }
+
 @media (min-device-pixel-ratio: 1),
   (-webkit-min-device-pixel-ratio: 1),
   (min-resolution: 96dpi),
   (min-resolution: 1dppx) {
   .hero {
-    @media screen and( max-width:$mobile) {
+    @media screen and( min-width:$desctop) {
       background-size: cover;
       background-image: linear-gradient(
           to right,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../images/bg-header-mob/header-mob-bg.jpg");
+        url("../images/hero-bg/br-studio.jpg");
     }
   }
 }
@@ -93,31 +97,30 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
-    @media screen and( min-width:$desctop) {
+    @media screen and( max-width:$mobile) {
       background-size: cover;
       background-image: linear-gradient(
           to right,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../images/hero-bg/bg-hero-desc2x.jpg");
+        url("../images/bg-header-mob/header-mob-bg2x.jpg");
     }
   }
 }
-
 @media (min-device-pixel-ratio: 1),
   (-webkit-min-device-pixel-ratio: 1),
   (min-resolution: 96dpi),
   (min-resolution: 1dppx) {
   .hero {
-    @media screen and( min-width:$desctop) {
+    @media screen and( max-width:$mobile) {
       background-size: cover;
       background-image: linear-gradient(
           to right,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../images/hero-bg/br-studio.jpg");
+        url("../images/bg-header-mob/header-mob-bg.jpg");
     }
   }
 }

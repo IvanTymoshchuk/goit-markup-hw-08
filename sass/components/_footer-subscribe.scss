@@ -2,8 +2,10 @@
 
 .form-footer {
   @media screen and( max-width: $desctop) {
-    display: block;
+    display: flex;
     text-align: center;
+    flex-direction: column;
+    gap: 20px;
   }
 
   @media screen and( min-width: $desctop) {
@@ -16,13 +18,16 @@
 .form-footer_title {
   @extend %titleStyle;
   color: $bg-color-body;
-  margin-bottom: 20px;
+
+  @media screen and( min-width: $desctop) {
+    margin-bottom: 20px;
+  }
 }
 
 .form-footer__label {
   display: flex;
 
-     @media screen and( max-width: $desctop) {
+  @media screen and( max-width: $desctop) {
     display: block;
     text-align: -webkit-center;
   }
@@ -40,12 +45,10 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 
-
-    @media screen and( max-width: $desctop) {
-     width: 100%;
+  @media screen and( max-width: $desctop) {
+    width: 100%;
     margin-bottom: 20px;
   }
-     
 }
 
 .form-footer__label input::placeholder {
@@ -84,6 +87,4 @@
   display: flex;
   align-items: center;
   padding-left: 28px;
-
-
 }

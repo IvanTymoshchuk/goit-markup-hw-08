@@ -649,6 +649,14 @@ body {
     width: calc((100% - 60px) / 3);
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-portfolio__list {
+    width: 354px;
+  }
+  .section-portfolio__list:not(:last-child) {
+    margin: 0 auto;
+  }
+}
 @media screen and (max-width: 480px) {
   .section-portfolio__list {
     width: 450px;
@@ -1451,7 +1459,6 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 30px;
-    margin-bottom: 60px;
   }
 }
 
@@ -1462,11 +1469,6 @@ body {
 @media screen and (min-width: 1200px) {
   .section-custom__compagny:not(:last-child) {
     margin-right: 30px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .section-custom__compagny {
-    margin-bottom: 30px;
   }
 }
 

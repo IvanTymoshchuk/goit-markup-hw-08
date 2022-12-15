@@ -68,6 +68,7 @@
   color: $actent-color;
 }
 
+
 .header-nav {
   display: flex;
   margin-left: 93px;
@@ -192,6 +193,7 @@
 
 .mobile-link {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 

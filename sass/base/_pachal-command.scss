@@ -6,6 +6,10 @@ body {
   font-size: 14px;
 }
 
+body.modal-open{
+  overflow:hidden;
+}
+
 .section {
   padding-bottom: 94px;
   padding-top: 94px;

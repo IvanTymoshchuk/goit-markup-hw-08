@@ -70,7 +70,12 @@
             aria-expanded="false"
             aria-controls="menu-mobile"
           >
-            <svg width="24" height="16" aria-label="Перемикач мобільного меню">
+            <svg
+              class="button-mobile__foto"
+              width="24"
+              height="16"
+              aria-label="Перемикач мобільного меню"
+            >
               <use
                 class="icon-menu_mobile"
                 href="./images/symbol-defs.svg#icon-menu_mobile"
@@ -91,10 +96,10 @@
 
           <div class="menu-mobile" id="menu-mobile" data-menu>
             <ul class="header-menu__mobile">
-              <li class="header-nav__item">
+              <li class="header-nav__item header-nav__item--studio">
                 <a href="./index.html" class="header-nav__link">Студія</a>
               </li>
-              <li class="header-nav__item">
+              <li class="header-nav__item header-nav__item--portf">
                 <a href="" class="header-nav__link">Портфоліо</a>
               </li>
               <li class="header-nav__item">
@@ -108,7 +113,7 @@
                   href="tel:+380961111111"
                   class="header-contact__link header-contact__link--tel"
                 >
-                  +380961111111</a
+                  +38 096 111 11 11</a
                 >
               </li>
               <li>
@@ -121,7 +126,7 @@
               </li>
             </ul>
 
-            <ul class="mobile-link list">
+            <ul class="mobile-link">
               <li class="mobil-list__link">
                 <a
                   href="https://www.instagram.com/"
@@ -626,7 +631,7 @@
 
                     <source
                       srcset="
-                        ./images/tab-portf/growingTab.jpg  1x,
+                        ./images/tab-portf/growingTab.jpg   1x,
                         ./images/tab-portf/growingTab2x.jpg 2x
                       "
                       media="( min-width:768px )"

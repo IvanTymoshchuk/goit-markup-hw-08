@@ -137,8 +137,8 @@
   text-align: center;
   text-transform: uppercase;
 
-  @media screen and(max-width:$tablets) {
-    width: 360px;
+  @media screen and(max-width:$mobile) {
+    width: 100%;
     font-weight: 900;
     margin: 0 auto;
     margin-bottom: 30px;

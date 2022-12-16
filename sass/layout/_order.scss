@@ -8,35 +8,35 @@
 .order-box {
   display: flex;
 
-   @media screen and( max-width: $desctop) {
-    display: block;
+  @media screen and( max-width: $desctop) {
+    display: flex;
+    flex-direction: column;
   }
 }
 
 .order-width {
-  min-width: 231px;
+  @media screen and( min-width:$desctop) {
+    min-width: 231px;
+  }
+
   @media screen and( max-width:$desctop) {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    gap: 20px;
+    gap: 30px;
     margin-bottom: 60px;
   }
- 
 }
 
-.order-adress {
-  margin-top: 20px;
-}
+
 
 .order-information {
   display: flex;
   flex-direction: column;
   gap: 9px;
 
-      @media screen and( max-width: $desctop) {
+  @media screen and( max-width: $desctop) {
     text-align: center;
-  } 
+  }
 }
 
 .info,
@@ -57,10 +57,7 @@
   transition: color 250ms $calc-animation;
 
   &:hover,
-&:focus {
-  color: $actent-color;
+  &:focus {
+    color: $actent-color;
+  }
 }
-}
-
-
-

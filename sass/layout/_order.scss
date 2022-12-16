@@ -7,15 +7,22 @@
 
 .order-box {
   display: flex;
+  
 
   @media screen and( max-width: $desctop) {
     display: flex;
     flex-direction: column;
   }
+  @media screen and( min-width: $desctop) {
+   align-items: baseline;
+  }
 }
 
 .order-width {
   @media screen and( min-width:$desctop) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     min-width: 231px;
   }
 
@@ -26,8 +33,6 @@
     margin-bottom: 60px;
   }
 }
-
-
 
 .order-information {
   display: flex;

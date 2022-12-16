@@ -418,7 +418,17 @@ body.modal-open {
 }
 @media screen and (max-width: 480px) {
   .backdrop-modal {
-    width: 90%;
+    width: 95%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .backdrop-modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .backdrop-modal {
+    width: 528px;
   }
 }
 
@@ -1087,7 +1097,7 @@ body.modal-open {
 
 /* Вікно Замовити послугу */
 .form {
-  width: 448px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1542,9 +1552,22 @@ body.modal-open {
             flex-direction: column;
   }
 }
+@media screen and (min-width: 1200px) {
+  .order-box {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .order-width {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
     min-width: 231px;
   }
 }

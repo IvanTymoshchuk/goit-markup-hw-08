@@ -33,7 +33,13 @@
   padding: 40px;
 
     @media screen and( max-width:$mobile) {
-    width: 90%;
+    width: 95%;
+  }
+    @media screen and( min-width:$mobile) {
+    width: 450px;
+  }
+   @media screen and( min-width:$desctop) {
+    width: 528px;
   }
 }
 

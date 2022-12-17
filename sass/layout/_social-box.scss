@@ -1,14 +1,18 @@
 /* Social  */
 
 .social-box {
-  margin-left: 70px;
-
-  @media screen and( max-width: $desctop) {
-    display: flex;
-    text-align: center;
-    gap: 20px;
+  @media screen and( min-width: $desctop ) {
+    margin-left: 70px;
+  }
+  @media screen and( max-width: $mobile ) {
     margin: 0;
     margin-bottom: 60px;
+  }
+  @media screen and( max-width: $desctop ) {
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    text-align: center;
     flex-direction: column;
   }
 }

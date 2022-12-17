@@ -35,7 +35,7 @@
 
 .form-footer__label input {
   outline: none;
-  width: 358px;
+
   height: 50px;
   margin-right: 12px;
   padding-left: 16px;
@@ -46,8 +46,13 @@
   border-radius: 4px;
 
   @media screen and( max-width: $desctop) {
-    width: 100%;
     margin-bottom: 20px;
+  }
+  @media screen and( max-width: $tablets) {
+    width: 450px;
+  }
+  @media screen and( min-width: $desctop) {
+    width: 358px;
   }
 }
 

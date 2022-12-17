@@ -508,7 +508,6 @@ body.modal-open {
 
 .form-footer__label input {
   outline: none;
-  width: 358px;
   height: 50px;
   margin-right: 12px;
   padding-left: 16px;
@@ -521,8 +520,17 @@ body.modal-open {
 }
 @media screen and (max-width: 1200px) {
   .form-footer__label input {
-    width: 100%;
     margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form-footer__label input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-footer__label input {
+    width: 358px;
   }
 }
 
@@ -1536,12 +1544,7 @@ body.modal-open {
   padding: 60px 0;
 }
 
-.order-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 480px) {
   .order-box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1554,9 +1557,33 @@ body.modal-open {
 }
 @media screen and (min-width: 1200px) {
   .order-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+  }
+}
+
+.order-box_tablets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .order-box_tablets {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .order-box_tablets {
+    display: block;
   }
 }
 
@@ -1571,17 +1598,21 @@ body.modal-open {
     min-width: 231px;
   }
 }
+@media screen and (max-width: 480px) {
+  .order-width {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (max-width: 1200px) {
   .order-width {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    gap: 20px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 30px;
-    margin-bottom: 60px;
   }
 }
 
@@ -1623,18 +1654,25 @@ body.modal-open {
 }
 
 /* Social  */
-.social-box {
-  margin-left: 70px;
+@media screen and (min-width: 1200px) {
+  .social-box {
+    margin-left: 70px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .social-box {
+    margin: 0;
+    margin-bottom: 60px;
+  }
 }
 @media screen and (max-width: 1200px) {
   .social-box {
+    text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    text-align: center;
     gap: 20px;
-    margin: 0;
-    margin-bottom: 60px;
+    text-align: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

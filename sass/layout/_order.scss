@@ -6,15 +6,25 @@
 }
 
 .order-box {
-  display: flex;
-  
-
-  @media screen and( max-width: $desctop) {
+  @media screen and( max-width: $mobile) {
     display: flex;
     flex-direction: column;
   }
   @media screen and( min-width: $desctop) {
-   align-items: baseline;
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.order-box_tablets {
+  display: flex;
+  align-items: baseline;
+  @media screen and( min-width: $tablets) and( max-width: $desctop) {
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
+  @media screen and( max-width: $mobile) {
+    display: block;
   }
 }
 
@@ -26,11 +36,13 @@
     min-width: 231px;
   }
 
+  @media screen and( max-width:$mobile) {
+    margin-bottom: 60px;
+  }
   @media screen and( max-width:$desctop) {
     display: flex;
+    gap: 20px;
     flex-direction: column;
-    gap: 30px;
-    margin-bottom: 60px;
   }
 }
 

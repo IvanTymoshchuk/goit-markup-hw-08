@@ -194,7 +194,7 @@
       top: 0;
       padding: 48px 40px;
       width: 100vw;
-      height: 100vh;
+      height: auto;
       background-color: $bg-color-body;
       z-index: 1;
     }
@@ -215,17 +215,10 @@
   }
 }
 
-.button-mobile__foto {
-  &:hover,
-  &:focus {
-    fill: $actent-color;
-  }
-}
-
 .button-mobile__foto--position {
   position: fixed;
-  top: 10px;
-  right: 15px;
+  top: 21px;
+  right: 25px;
 }
 
 .mobile-separator {

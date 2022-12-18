@@ -4,10 +4,6 @@
   width:100%;
   margin-left: auto;
   margin-right: auto;
-
-  @media screen and( max-width:$mobile) {
-    width: 100%;
-  }
 }
 
 .form-title {
@@ -124,7 +120,7 @@
   margin-right: 5px;
   color: $title-text-color;
 
-   @media screen and( max-width:$mobile) {
+   @media screen and( max-width:$desctop) {
     font-size: 12px;
     line-height: 1.2;
   }

@@ -48,9 +48,13 @@
   @media screen and( max-width: $desctop) {
     margin-bottom: 20px;
   }
-  @media screen and( max-width: $tablets) {
+  @media screen and( max-width: 767px) {
     width: 100%;
   }
+  @media screen and( min-width: $tablets) {
+    width: 450px;
+  }
+
   @media screen and( min-width: $desctop) {
     width: 358px;
   }

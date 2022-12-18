@@ -523,9 +523,14 @@ body.modal-open {
     margin-bottom: 20px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .form-footer__label input {
     width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .form-footer__label input {
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -973,7 +978,7 @@ body.modal-open {
     top: 0;
     padding: 48px 40px;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     background-color: #ffffff;
     z-index: 1;
   }
@@ -1003,14 +1008,10 @@ body.modal-open {
   }
 }
 
-.button-mobile__foto:hover, .button-mobile__foto:focus {
-  fill: #2196f3;
-}
-
 .button-mobile__foto--position {
   position: fixed;
-  top: 10px;
-  right: 15px;
+  top: 21px;
+  right: 25px;
 }
 
 .mobile-separator {
@@ -1082,9 +1083,13 @@ body.modal-open {
     width: 696px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 481px) and (max-width: 1199px) {
   .hero-title {
-    margin-bottom: 30px;
+    width: 360px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .hero-title {
     font-size: 26px;
     line-height: 1.62;
     letter-spacing: 0.06em;
@@ -1114,11 +1119,6 @@ body.modal-open {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-}
-@media screen and (max-width: 480px) {
-  .form {
-    width: 100%;
-  }
 }
 
 .form-title {
@@ -1264,7 +1264,7 @@ body.modal-open {
   margin-right: 5px;
   color: #757575;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1200px) {
   .form-label__comment {
     font-size: 12px;
     line-height: 1.2;

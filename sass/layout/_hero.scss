@@ -91,8 +91,11 @@
     width: 696px;
   }
 
-  @media screen and(max-width:$mobile) {
-    margin-bottom: 30px;
+  @media screen and(min-width:481px) and( max-width:1199px) {
+    width: 360px;
+  }
+
+  @media screen and(max-width:$desctop) {
     font-size: 26px;
     line-height: 1.62;
     letter-spacing: 0.06em;

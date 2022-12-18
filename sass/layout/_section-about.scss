@@ -11,7 +11,7 @@
   @media screen and( max-width: $mobile) {
     display: block;
   }
-  @media screen and( min-width: $tablets) and (max-width: $desctop) {
+  @media screen and( min-width: 481px) and (max-width: $desctop) {
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;

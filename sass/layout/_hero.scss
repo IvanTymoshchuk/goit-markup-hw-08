@@ -75,7 +75,8 @@
 }
 
 .hero-title {
-  width: 696px;
+  width: 100%;
+
   margin: 0 auto;
   margin-bottom: 30px;
 
@@ -86,16 +87,15 @@
   text-align: center;
   text-transform: uppercase;
 
+  @media screen and(min-width:$desctop) {
+    width: 696px;
+  }
+
   @media screen and(max-width:$mobile) {
-    width: 100%;
-    font-weight: 900;
-    margin: 0 auto;
     margin-bottom: 30px;
     font-size: 26px;
     line-height: 1.62;
-    text-align: center;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
   }
 }
 

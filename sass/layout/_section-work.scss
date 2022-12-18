@@ -20,10 +20,9 @@
 }
 
 .section-work__list {
+  @include centerFlex();
   color: $primary-text-color;
   list-style: none;
-  display: flex;
-  align-items: center;
 }
 
 .section-works__item {

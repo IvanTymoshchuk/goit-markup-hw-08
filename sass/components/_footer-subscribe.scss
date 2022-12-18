@@ -61,8 +61,7 @@
 }
 
 .form-footer__bt {
-  display: flex;
-  align-items: center;
+  @include centerFlex();
   padding-left: 28px;
 }
 
@@ -89,7 +88,6 @@
 }
 
 .form-button__footer {
-  display: flex;
-  align-items: center;
+  @include centerFlex();
   padding-left: 28px;
 }

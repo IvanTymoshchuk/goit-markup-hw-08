@@ -1,14 +1,12 @@
 .header-container {
   @media screen and( min-width: $tablets) {
-    display: flex;
-    align-items: center;
+    @include centerFlex();
     margin-right: auto;
   }
 }
 
 .header-main__nav {
-  display: flex;
-  align-items: center;
+  @include centerFlex();
   margin-right: auto;
 
   @media screen and( max-width:767px) {
@@ -122,9 +120,8 @@
 }
 
 .header-contact__link {
+  @include centerFlex();
   color: $title-text-color;
-  align-items: center;
-  display: flex;
 
   @media screen and( max-width:$tablets) {
     font-weight: 500;
@@ -197,7 +194,7 @@
       top: 0;
       padding: 48px 40px;
       width: 100vw;
-      // height: 100vh;
+      height: 100vh;
       background-color: $bg-color-body;
       z-index: 1;
     }

@@ -89,6 +89,7 @@
 
 .form-label__rules {
   @include centerFlex();
+  justify-content: center;
   flex-direction: row;
   margin-bottom: 30px;
 }

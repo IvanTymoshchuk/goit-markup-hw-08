@@ -436,12 +436,12 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   padding: 0;
   fill: #000000;
@@ -680,7 +680,7 @@ body.modal-open {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .section-portfolio__list {
     width: 450px;
   }
@@ -725,7 +725,7 @@ body.modal-open {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .section-portfolio__overlay {
     padding: 63px 54px;
   }
@@ -892,13 +892,13 @@ body.modal-open {
 }
 
 .header-contact__link {
-  color: #757575;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #757575;
 }
 @media screen and (max-width: 768px) {
   .header-contact__link {
@@ -973,6 +973,7 @@ body.modal-open {
     top: 0;
     padding: 48px 40px;
     width: 100vw;
+    height: 100vh;
     background-color: #ffffff;
     z-index: 1;
   }
@@ -1220,12 +1221,12 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -1320,12 +1321,12 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 30px;
   height: 120px;
   border-radius: 4px;
@@ -1380,14 +1381,14 @@ body.modal-open {
 }
 
 .section-work__list {
-  color: #212121;
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #212121;
+  list-style: none;
 }
 
 .section-works__item {
@@ -1518,12 +1519,12 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   width: 100%;
@@ -1672,7 +1673,6 @@ body.modal-open {
 }
 @media screen and (max-width: 1200px) {
   .social-box {
-    text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1730,12 +1730,12 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   height: 100%;
   border-radius: 50%;

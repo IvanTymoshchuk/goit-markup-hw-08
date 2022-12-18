@@ -31,7 +31,7 @@
       margin: 0 auto;
     }
   }
-  @media screen and( max-width: $mobile) {
+  @media screen and( max-width: 767px) {
     width: 450px;
   }
 }
@@ -72,7 +72,7 @@
   transform: translateY(100%);
   transition: transform 250ms $calc-animation;
 
-  @media screen and(max-width:$mobile) {
+  @media screen and(max-width:767px) {
     padding: 63px 54px;
   }
 }

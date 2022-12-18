@@ -45,6 +45,7 @@
 
 .backdrop-button {
   @include centerFlex();
+  justify-content: center;
   position: absolute;
   padding: 0;
   fill: $fill-icon;

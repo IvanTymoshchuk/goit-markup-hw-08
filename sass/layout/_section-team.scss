@@ -5,8 +5,7 @@
 }
 
 .section-team__list {
-  display: flex;
-  align-items: center;
+  @include centerFlex();
 
   @media screen and( max-width: $desctop) {
     flex-wrap: wrap;

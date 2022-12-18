@@ -13,7 +13,7 @@
 .section-custom__compagny {
   height: 92px;
 
-  @media screen and( max-width: $mobile) {
+  @media screen and( max-width: $tablets) {
     width: calc((100% - 30px) / 2);
   }
 

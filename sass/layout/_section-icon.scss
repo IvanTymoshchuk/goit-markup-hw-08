@@ -35,7 +35,7 @@
 }
 
 .link-icon-menu{
- @media screen and( max-width:$mobile) {
+ @media screen and( max-width:$tablets) {
     color: $actent-color;
     font-weight: 500;
     line-height: 1.2;

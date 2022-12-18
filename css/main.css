@@ -525,7 +525,7 @@ body.modal-open {
 }
 @media screen and (max-width: 768px) {
   .form-footer__label input {
-    width: 450px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1002,7 +1002,7 @@ body.modal-open {
 }
 
 .button-mobile__foto--position {
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 15px;
 }

@@ -2,21 +2,18 @@
 
 .logo,
 .logo-header {
+  @include font(700, 26, null, null);
   font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
   text-decoration: none;
 }
 
 .logo {
   color: $primary-white-color;
 
-
-    @media screen and( max-width: $desctop) {
+  @include max-desktop {
     display: block;
     text-align: center;
-  } 
+  }
 }
 
 .logo-header {

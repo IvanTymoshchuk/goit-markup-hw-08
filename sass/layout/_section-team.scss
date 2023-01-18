@@ -7,7 +7,7 @@
 .section-team__list {
   @include centerFlex();
 
-  @media screen and( max-width: $desctop) {
+   @include max-desktop  {
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
@@ -21,17 +21,17 @@
   border-radius: 0px 0px 4px 4px;
 
   &:not(:last-child) {
-    @media screen and( min-width: $desctop) {
+     @include desktop  {
       margin-right: 30px;
     }
   }
-  @media screen and( max-width: $mobile) {
+   @include max-mobile  {
     width: 450px;
   }
-  @media screen and( min-width: $tablets) {
+    @include tablet  {
     width: 354px;
   }
-  @media screen and( min-width: $desctop) {
+   @include desktop  {
     width: 270px;
   }
 }
@@ -41,12 +41,9 @@
 }
 
 .section-team__name {
+  @include font(500, 16, null, null);
   margin-bottom: 10px;
-
   color: $primary-text-color;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
   text-align: center;
 }
 
@@ -54,6 +51,5 @@
   color: $title-text-color;
   margin-bottom: 16px;
   font-size: 16px;
-  line-height: 1.18;
   text-align: center;
 }

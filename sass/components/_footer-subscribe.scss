@@ -1,14 +1,14 @@
 /* footer підпишись */
 
 .form-footer {
-  @media screen and( max-width: $desctop) {
+  @include max-desktop {
     display: flex;
     text-align: center;
     flex-direction: column;
     gap: 20px;
   }
 
-  @media screen and( min-width: $desctop) {
+  @include desktop {
     width: 570px;
     height: 86px;
     margin-left: 93px;
@@ -19,7 +19,7 @@
   @extend %titleStyle;
   color: $bg-color-body;
 
-  @media screen and( min-width: $desctop) {
+  @include desktop {
     margin-bottom: 20px;
   }
 }
@@ -27,7 +27,7 @@
 .form-footer__label {
   display: flex;
 
-  @media screen and( max-width: $desctop) {
+  @include max-desktop {
     display: block;
     text-align: -webkit-center;
   }
@@ -35,7 +35,6 @@
 
 .form-footer__label input {
   outline: none;
-
   height: 50px;
   margin-right: 12px;
   padding-left: 16px;
@@ -45,17 +44,17 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 
-  @media screen and( max-width: $desctop) {
+  @include max-desktop {
     margin-bottom: 20px;
   }
   @media screen and( max-width: 767px) {
     width: 100%;
   }
-  @media screen and( min-width: $tablets) {
+  @include tablet {
     width: 450px;
   }
 
-  @media screen and( min-width: $desctop) {
+  @include desktop {
     width: 358px;
   }
 }
@@ -76,6 +75,7 @@
 }
 
 .form-button {
+  @include font(700, 16, 1.9, 0.06);
   width: 200px;
   height: 50px;
   color: $primary-white-color;
@@ -84,11 +84,6 @@
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
 }
 
 .form-button__footer {

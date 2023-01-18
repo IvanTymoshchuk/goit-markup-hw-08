@@ -1,14 +1,14 @@
 /* Social  */
 
 .social-box {
-  @media screen and( min-width: $desctop ) {
+  @include desktop {
     margin-left: 70px;
   }
   @media screen and( max-width: 767px ) {
     margin: 0;
     margin-bottom: 60px;
   }
-  @media screen and( max-width: $desctop ) {
+  @include max-desktop {
     display: flex;
     gap: 20px;
     text-align: center;
@@ -20,7 +20,7 @@
   @extend %titleStyle;
 
   color: $primary-white-color;
-  @media screen and( min-width: $desctop) {
+  @include desktop {
     margin-bottom: 20px;
   }
 }

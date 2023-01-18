@@ -4,21 +4,19 @@
   display: flex;
   gap: 8px;
 
-    @media screen and( max-width:767px) {
+  @media screen and( max-width:767px) {
     flex-wrap: wrap;
   }
-    @media screen and( min-width:$tablets) {
+  @include tablet {
     justify-content: center;
   }
 }
 
 .section-button__portfolio {
+  @include font(500, 16, 1.6, null);
   padding: 6px 22px;
   color: $fill-icon;
   background-color: $primary-white-color;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
   border-radius: 4px;
   text-align: center;
   border: 4px solid transparent;

@@ -9,11 +9,10 @@
 .form-title {
   display: block;
   font-size: 20px;
-  line-height: 1.15;
   margin-bottom: 12px;
   color: $primary-text-color;
 
-   @media screen and( max-width:$mobile) {
+    @include max-mobile{
     line-height: 1.5;
   }
 }
@@ -26,11 +25,9 @@
 }
 
 .form-label__title {
+  @include font(null, 12, null, 0.01);
   margin-bottom: 4px;
   text-align: left;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
   color: $title-text-color;
 }
 
@@ -115,12 +112,11 @@
 }
 
 .form-label__comment {
-  font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.7;
   margin-right: 5px;
   color: $title-text-color;
 
-   @media screen and( max-width:$desctop) {
+   @include max-desktop {
     font-size: 12px;
     line-height: 1.2;
   }

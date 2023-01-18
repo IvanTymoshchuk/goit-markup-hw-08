@@ -8,7 +8,6 @@
   top: 0;
   background-color: rgba(47, 48, 58, 0.4);
   transition: opacity 250ms $calc-animation, visibility 250ms $calc-animation;
-
   overflow-y: scroll;
 }
 
@@ -16,7 +15,6 @@
   &.is-hidden {
     opacity: 0;
     visibility: hidden;
-
     pointer-events: none;
   }
 }
@@ -35,10 +33,10 @@
     @media screen and( max-width:$mobile) {
     width: 95%;
   }
-    @media screen and( min-width:$mobile) {
+     @include mobile {
     width: 450px;
   }
-   @media screen and( min-width:$desctop) {
+    @include desktop {
     width: 528px;
   }
 }

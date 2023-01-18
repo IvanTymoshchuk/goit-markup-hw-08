@@ -3,7 +3,7 @@
 .section-custom {
   display: flex;
 
-  @media screen and( max-width:$desctop) {
+   @include max-desktop  {
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
@@ -13,15 +13,15 @@
 .section-custom__compagny {
   height: 92px;
 
-  @media screen and( max-width: $tablets) {
+   @include max-tablet  {
     width: calc((100% - 30px) / 2);
   }
 
-  @media screen and( min-width: $tablets) {
+   @include tablet {
     width: calc((100% - 60px) / 3);
   }
 
-  @media screen and( min-width: $desctop) {
+  @include desktop {
     &:not(:last-child) {
       margin-right: 30px;
     }

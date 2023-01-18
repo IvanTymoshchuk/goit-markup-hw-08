@@ -1,21 +1,19 @@
 /* Section what we do - Чим займаємось */
 
 .section-reviers {
-  @media screen and( max-width: $desctop) {
+  @include max-desktop {
     display: none;
   }
 }
 
 .section-title {
   font-size: 36px;
-  line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
   margin-top: 0;
 
-  @media screen and( max-width: $desctop) {
+  @include max-desktop {
     font-size: 28px;
-    line-height: 1.2;
   }
 }
 

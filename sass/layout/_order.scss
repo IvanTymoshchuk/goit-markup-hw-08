@@ -6,11 +6,11 @@
 }
 
 .order-box {
-  @media screen and( max-width: $mobile) {
+   @include max-mobile {
     display: flex;
     flex-direction: column;
   }
-  @media screen and( min-width: $desctop) {
+   @include desktop  {
     display: flex;
     align-items: baseline;
   }
@@ -19,7 +19,7 @@
 .order-box_tablets {
   display: flex;
   align-items: baseline;
-  @media screen and( min-width: $tablets) and( max-width: $desctop) {
+  @media screen and( min-width: 768px) and( max-width: 1200px) {
     justify-content: space-around;
     margin-bottom: 60px;
   }
@@ -29,7 +29,7 @@
 }
 
 .order-width {
-  @media screen and( min-width:$desctop) {
+   @include desktop {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -39,7 +39,7 @@
   @media screen and( max-width:767px) {
     margin-bottom: 60px;
   }
-  @media screen and( max-width:$desctop) {
+   @include max-desktop  {
     display: flex;
     gap: 20px;
     flex-direction: column;
@@ -51,7 +51,7 @@
   flex-direction: column;
   gap: 9px;
 
-  @media screen and( max-width: $desctop) {
+   @include max-desktop  {
     text-align: center;
   }
 }
@@ -59,7 +59,7 @@
 .info,
 .mail {
   font-style: normal;
-  line-height: 1.71;
+  line-height: 1.7;
 }
 
 .mail {

@@ -8,10 +8,10 @@
   list-style: none;
   display: flex;
 
-  @media screen and( max-width: $mobile) {
+   @include max-mobile  {
     display: block;
   }
-  @media screen and( min-width: 481px) and (max-width: $desctop) {
+  @media screen and( min-width: 481px) and (max-width: 1200px) {
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
@@ -19,19 +19,17 @@
 }
 
 .section-about__list {
-  @media screen and( min-width:$desctop) {
+  @include desktop {
     margin-right: 30px;
     &:last-child {
       margin-right: 0;
     }
   }
-   @media screen and( min-width:$tablets) and (max-width: $desctop){
-       width: 354px;
+  @media screen and( min-width:768px) and (max-width: 1200px) {
+    width: 354px;
     margin: 0 auto;
+  }
 }
-    }
-  
-   
 
 .section-about__bg {
   @include centerFlex();
@@ -60,10 +58,9 @@
 
 .section-about__text {
   color: $title-text-color;
-  font-size: 14px;
-  line-height: 1.72;
+  line-height: 1.7;
 
-  @media screen and( max-width: $desctop) {
+   @include max-desktop  {
     margin-bottom: 30px;
   }
 }

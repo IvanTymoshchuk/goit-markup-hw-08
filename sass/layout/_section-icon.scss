@@ -36,10 +36,9 @@
 }
 
 .link-icon-menu{
- @media screen and( max-width:$tablets) {
+  @include max-tablet  {
     color: $actent-color;
     font-weight: 500;
-    line-height: 1.2;
     text-decoration: none;
   }
 }

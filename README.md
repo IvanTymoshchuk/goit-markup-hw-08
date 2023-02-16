@@ -1,1 +1,4 @@
-# goit-markup-hw-03
+ [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=This+is+my+first+Website)](https://git.io/typing-svg)
+# Website - "WebStudio" 
+
+## STACK - HTML/CSS (BEM, SASS) and few JavaScript

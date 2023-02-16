@@ -3,7 +3,7 @@
 
 ## STACK - HTML/CSS (BEM, SASS) and few JavaScript
 ![Demonstration](https://github.com/dankozz1t/WebStudio/blob/main/images/demo.gif)
-> Why are you watching video? [Check it out yourself!](https://dankozz1t.github.io/WebStudio/ "Demonstration")
+> Why are you watching video? [Check it out yourself!](https://ivantymoshchuk.github.io/goit-markup-hw-08/ "Demonstration")
 > ---
 ### Through this project, I learned 
 > * HTML (tags, attributes, semantics, clean structure, code style) <br/>
